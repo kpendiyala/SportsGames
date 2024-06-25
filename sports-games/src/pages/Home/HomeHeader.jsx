@@ -9,7 +9,7 @@ function Header(props){
     return (
         <div className="header-container">
             {
-                props.show ? <button className='back-button' onClick={() => navigate('/home')}>
+                props.show ? <button className='back-button' onClick={() => navigate(-1)}>
                                 &lt; BACK
                             </button> : null
             }

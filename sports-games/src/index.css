@@ -112,8 +112,8 @@ html{
 } 
 
 .sports-container{
-    height: 25vh;
-    width: 99%;
+    height: 24.5vh;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,10 +125,11 @@ html{
 
 .basketball-container{
     /* background-image: url(./assets/basketball.png); */
-    background-color: rgb(255, 136, 0);
+    background-color: rgb(204, 133, 0);
     background-size: cover;
     background-position: center;
     color: black;
+    margin-top:15px;
 }
 .football-container{
     /* background-image: url(./assets/football.png); */
@@ -157,10 +158,73 @@ html{
 
 .football-container:hover{
     transition: 500ms;
-    background-color: rgb(107, 57, 11);
+    background-color: rgb(156, 86, 20);
 }
 
 .soccer-container:hover{
     transition: 500ms;
-    background-color: rgb(1, 175, 1);
+    background-color: rgb(2, 214, 2);
+    
+}
+/*---------------------------------------------------------------------------*/
+
+.basketball-games-container{
+    display: flex;
+    flex-flow: row wrap;
+    height: 81vh;
+    width: 100vw;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.basketball-game-container{
+    display:flex;
+    flex: 1 0 50%;
+    max-width: 40%; 
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    margin: 25px;
+    font-family: pressTwoPlayer;
+    border-radius: 20px;
+    box-shadow: 15px 15px rgb(56, 70, 75);
+    cursor: pointer;
+}
+
+.basketball-game-container:hover{
+    transition: 500ms;
+    box-shadow: none;
+    translate: 5px 5px;
+}
+
+.wordle-container{
+    background-color: #45638a;
+}
+
+.guess-who-container{
+    background-color: #be4242;
+}
+
+.tbd-container-1{
+    background-color: #c06232;
+}
+
+.tbd-container-2{
+    background-color: #c2a24a;
+}
+
+.wordle-container:hover{
+    background-color: #7eb6ff;
+}
+
+.guess-who-container:hover{
+    background-color: #ff5757;
+}
+
+.tbd-container-1:hover{
+    background-color: #ff8142;
+}
+
+.tbd-container-2:hover{
+    background-color: #ffd560;
 }
