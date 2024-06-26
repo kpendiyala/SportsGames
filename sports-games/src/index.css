@@ -6,6 +6,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'pressTwoPlayer';
 }
 
 html{
@@ -228,3 +229,235 @@ html{
 .tbd-container-2:hover{
     background-color: #ffd560;
 }
+
+/*-------------------------------------------------------------------------------------------*/
+
+.wordle-body-container{
+    width: 100%;
+    height: 81vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    }
+
+.hardle{
+    margin: 2vh;
+    border: 5px solid black;
+    padding: 25px;
+    border-radius: 20px;
+    background-color: #7eb6ff;
+}
+
+.wordle-search-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh;
+    gap: 2vw;
+}
+
+.magnifying-glass{
+    width: 7vh;
+    height: 7vh;
+}
+
+.guess-box{
+    border: 5px solid black;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 15px 15px rgb(56, 70, 75);
+    background-color: #a87300;
+    font-size: 30px;
+}
+
+.guess-box:focus{
+    transition: 500ms;
+    box-shadow: none;
+    translate: 5px 5px;
+    background-color: #e29b00;
+}
+
+.guess-button{
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px rgb(56, 70, 75);
+    background-color: #16a703;
+    cursor: pointer;
+}
+
+.hint-button{
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px rgb(56, 70, 75);
+    background-color: #afac00;
+    cursor: pointer;
+}
+
+.guess-button:hover{
+    transition: 500ms;
+    box-shadow: none;
+    translate: 5px 5px;
+    background-color: #1eff00;
+}
+
+.hint-button:hover{
+    transition: 500ms;
+    box-shadow: none;
+    translate: 5px 5px;
+    background-color: #fffb00;
+}
+.guess-result-container{
+    translate: -4.5vw;
+}
+
+.guessLetter{
+    display: inline-flex;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #7eb6ff;
+    translate: 10 px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.yellow{
+    background-color: rgb(175, 175, 0);
+}
+
+.green{
+    background-color: rgb(0, 95, 0);
+}
+
+.white{
+    background-color: rgb(58, 58, 58);
+}
+
+.guess-box:disabled{
+    transition: 500ms;
+    box-shadow: none;
+    translate: 5px 5px;
+    background-color: #e29b00;
+}
+
+.guess-button:disabled{
+    transition: 500ms;
+    box-shadow: none;
+    translate: 5px 5px;
+    background-color: #1eff00;
+    cursor:default;
+}
+
+.hint-button:disabled{
+    transition: 500ms;
+    box-shadow: none;
+    translate: 5px 5px;
+    background-color: #fffb00;
+    cursor:default;
+}
+
+.modal-overlay{
+    position: fixed;
+    /* left: 650px;
+    top: 550px; */
+}
+.modal-content{
+    display: flex;
+    width:25vw;
+    height:25vh;
+    flex-direction: column;
+    border: 5px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fffb00;
+    justify-content: center;
+    align-items: center;
+}
+
+.hint-header{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 3px solid black;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #7eb6ff;
+}
+
+.close-button{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 40%;
+    box-shadow: 5px 5px rgb(56, 70, 75);
+    background-color: red;
+    cursor: pointer;
+    color: white;
+}
+
+.close-button:hover{
+    transition: 500ms;
+    box-shadow: none;
+    translate: 5px 5px;
+    background-color: rgb(131, 0, 0);
+}
+
+.hint-text{
+    margin: 20px;
+    margin-top: 30px;
+    padding: 20px;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: #7eb6ff;
+    text-align: center;
+}
+
+.arrow{
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 40%;
+    box-shadow: 5px 5px rgb(56, 70, 75);
+    background-color: rgb(173, 216, 230);
+    cursor: pointer;
+}
+
+.left-arrow{
+    position: absolute;
+    left: -2vh;
+    top: 45%;
+}
+
+.right-arrow{
+    position: absolute;
+    right: -2vh;
+    top: 45%;
+}
+
+.win-message-container{
+    position: fixed;
+    display: flex;
+    width:20vw;
+    height:20vh;
+    flex-direction: column;
+    border: 5px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fffb00;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 3;
+}
+
