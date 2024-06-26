@@ -22,5 +22,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/basketball/wordle' element = {<NBAWordle />}/>   
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>,
+  </React.StrictMode>
 )

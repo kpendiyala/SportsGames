@@ -3,7 +3,7 @@ import HomeHeader from "../../Home/HomeHeader";
 function NBAGuessWho(){
     return(
         <div>
-            <HomeHeader show={true}/>
+            <HomeHeader showBackButton={true} showGameButtons={true}/>
         </div>
     );
 }

@@ -4,11 +4,11 @@ import Body from './HomeBody.jsx'
 function Home() {
     return(
         <>
-            <Header show={false}/>
+            <Header showBackButton={false} showGameButtons={false}/>
             <Body />
         </>
         
     );
 }
 
-export default Home
+export default Home;

@@ -4,7 +4,7 @@ import HomeHeader from '../Home/HomeHeader.jsx'
 function Football() {
     return(
         <>
-            <HomeHeader show={true}/>
+            <HomeHeader showBackButton={true} showGameButtons={false}/>
         </>
         
     );

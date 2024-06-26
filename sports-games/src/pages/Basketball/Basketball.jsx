@@ -4,7 +4,7 @@ import BasketballBody from './BasketballBody.jsx';
 function Basketball() {
     return(
         <>
-            <HomeHeader show={true}/>
+            <HomeHeader showBackButton={true} showGameButtons={false}/>
             <BasketballBody />
         </>
         

@@ -1,4 +1,4 @@
-import magnifyingGlass from "../../../assets/magnifying-glass.png"
+import reloadImage from '../../../assets/reload.png'
 
 
 import React, { useState } from 'react';
@@ -11,6 +11,7 @@ function NBAWordleBody(){
     const [isWinner, setIsWinner] = useState(false); 
     const [numGuesses, setNumGuesses] = useState(0);
     const [hintNum, setHintNum] = useState(0);
+    const [reload, setReload] = useState(false);
     const hints = [
         `First Letter Is: ${playerName[0]}`,
         `This Player Averaged 24.6 Points Over The 2021 Season`,
@@ -42,6 +43,16 @@ function NBAWordleBody(){
             return;
         }
     };
+
+    const handleReload = () => {
+        setGuess('');
+        setGuesses([]);
+        setPlayerName("LEBRON")
+        setShowHint(false);
+        setIsWinner(false);
+        setNumGuesses(0);
+        setHintNum(0);
+    }
 
     const handleHint = () => {
         setShowHint(true); 
@@ -80,7 +91,7 @@ function NBAWordleBody(){
         <div className="wordle-body-container">
             <h1 className="hardle">Wardle</h1>
             <form className="wordle-search-form"onSubmit={handleSubmit}>
-                <img className="magnifying-glass" src={magnifyingGlass} alt="Search" id="magnifying-glass" />
+                <img className="reload-button" src={reloadImage} alt="Search" id="reload-button" onClick={handleReload}/>
                 <input className="guess-box" type="text" value={guess} onChange={handleChange} maxLength={playerName.length} disabled={isWinner || guesses.length >= 6} />
                 <button className= 'guess-button' type="submit" disabled={isWinner || guesses.length >= 6}>guess</button>
                 <button className='hint-button'type="button" onClick={handleHint} disabled={isWinner || guesses.length >= 6}>hint</button>
