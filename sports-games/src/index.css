@@ -305,6 +305,13 @@ html{
     cursor: pointer;
 }
 
+.num-letters{
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fa5b3e;
+}
+
 .guess-button:hover{
     transition: 500ms;
     box-shadow: none;
@@ -466,7 +473,7 @@ html{
 }
 
 /*------------------------------------------------------------------------*/
-.login-container{
+.popup-container{
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -536,4 +543,58 @@ html{
     box-shadow: none;
     translate: 7px 7px;
     background-color: rgb(216, 216, 216);
+}
+/*----------------------------------------------------*/
+.wordle-help-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.how-to-play{
+    border-radius: 20px;
+    padding: 15px;
+    border: 5px solid black;
+}
+
+ .wordle-help-container h3{
+    margin-top: 50px;
+    margin-right: auto;
+ }
+
+.wordle-help-list{
+    margin: 0 30px;
+}
+
+.wordle-help-list li{
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+.letter-example{
+    display: inline-flex;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.yellow-letter-example{
+    background-color: rgb(175, 175, 0);
+}
+
+.green-letter-example{
+    background-color: rgb(0, 95, 0);
+}
+
+.white-letter-example{
+    background-color: rgb(58, 58, 58);
+}
+
+.example-wordle{
+    margin-top: 20px
 }

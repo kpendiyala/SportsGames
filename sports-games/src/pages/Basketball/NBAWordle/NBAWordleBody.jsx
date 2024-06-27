@@ -95,6 +95,7 @@ function NBAWordleBody(){
                 <input className="guess-box" type="text" value={guess} onChange={handleChange} maxLength={playerName.length} disabled={isWinner || guesses.length >= 6} />
                 <button className= 'guess-button' type="submit" disabled={isWinner || guesses.length >= 6}>guess</button>
                 <button className='hint-button'type="button" onClick={handleHint} disabled={isWinner || guesses.length >= 6}>hint</button>
+                <p className='num-letters'>{playerName.length} Letter Word</p>
             </form>
             <div className="guess-result-container">{guesses.map(renderGuess)}</div>
             {isWinner && <div id="win-message-container" className="win-message-container">
