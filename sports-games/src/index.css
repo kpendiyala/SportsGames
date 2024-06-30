@@ -169,7 +169,7 @@ html{
 }
 /*---------------------------------------------------------------------------*/
 
-.basketball-games-container{
+.sports-games-container{
     display: flex;
     flex-flow: row wrap;
     height: 81vh;
@@ -178,7 +178,7 @@ html{
     justify-content: center;
 }
 
-.basketball-game-container{
+.sports-game-container{
     display:flex;
     flex: 1 0 50%;
     max-width: 40%; 
@@ -192,7 +192,7 @@ html{
     cursor: pointer;
 }
 
-.basketball-game-container:hover{
+.sports-game-container:hover{
     transition: 500ms;
     box-shadow: none;
     translate: 5px 5px;

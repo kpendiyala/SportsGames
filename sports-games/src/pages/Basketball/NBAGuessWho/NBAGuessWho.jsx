@@ -1,9 +1,10 @@
-import HomeHeader from "../../Home/HomeHeader";
+import Header from "../../Home/Header";
+import player_game_log from pro_football_web_scraper
 
 function NBAGuessWho(){
     return(
         <div>
-            <HomeHeader showBackButton={true} showGameButtons={true}/>
+            <Header showBackButton={true} showGameButtons={true}/>
         </div>
     );
 }

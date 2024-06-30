@@ -1,11 +1,11 @@
-import HomeHeader from '../Home/HomeHeader.jsx'
-import BasketballBody from './BasketballBody.jsx';
+import Header from '../Home/Header.jsx'
+import SportsBody from '../SportsBody.jsx';
 
 function Basketball() {
     return(
         <>
-            <HomeHeader showBackButton={true} showGameButtons={false}/>
-            <BasketballBody />
+            <Header showBackButton={true} showGameButtons={false}/>
+            <SportsBody sport = "NBA"/>
         </>
         
     );

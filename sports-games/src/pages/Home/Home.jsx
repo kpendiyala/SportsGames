@@ -1,4 +1,4 @@
-import Header from './HomeHeader.jsx'
+import Header from './Header.jsx'
 import Body from './HomeBody.jsx'
 
 function Home() {

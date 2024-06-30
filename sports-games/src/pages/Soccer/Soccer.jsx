@@ -1,10 +1,12 @@
-import HomeHeader from '../Home/HomeHeader.jsx'
+import Header from '../Home/Header.jsx'
+import SportsBody from '../SportsBody.jsx';
 
 
 function Soccer() {
     return(
         <>
-            <HomeHeader showBackButton={true} showGameButtons={false}/>
+            <Header showBackButton={true} showGameButtons={false}/>
+            <SportsBody sport = "Soccer"/>
         </>
         
     );

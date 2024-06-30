@@ -3,7 +3,7 @@ import questionMarkImage from '../../assets/questionMarkButton.png'
 import statsImage from '../../assets/stats.png'
 import logoImage from '../../assets/logo.png'
 import { useNavigate } from 'react-router-dom'
-import Login from '../Login/Login'
+import Login from '../Login/Login.jsx'
 import Help from '../Help.jsx'
 import { useState } from 'react'
 

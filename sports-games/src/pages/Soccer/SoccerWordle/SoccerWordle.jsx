@@ -1,14 +1,14 @@
 import Header from "../../Home/Header";
 import Wordle from "../../Wordle";
 
-function NBAWordle(){
+function SoccerWordle(){
     return(
         <div>
             <Header showBackButton={true} showGameButtons={true} game='wordle'/>
-            <Wordle sport="NBA"/>
+            <Wordle sport="Soccer"/>
             
         </div>
     );
 }
 
-export default NBAWordle;
+export default SoccerWordle;
