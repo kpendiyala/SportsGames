@@ -519,6 +519,30 @@ html{
     margin-bottom: 20px;
 }
 
+.show-password{
+    display: inline-flex;
+    font-size: 10px;
+    margin-right: auto;
+    margin-left: 20px;
+    margin-top: -15px;
+    gap: 10px;
+}
+
+.show-password-button{
+    box-shadow: 2px 2px rgb(56, 70, 75);
+    background-color: rgb(34, 34, 34);
+    font-size: 20px;
+    color: rgb(138, 138, 138);
+    margin-bottom: 20px;
+}
+
+.show-password-button:checked{
+    transition: 500ms;
+    box-shadow: none;
+    translate: 2px 1px;
+    background-color: rgb(216, 216, 216);
+}
+
 .login-submit-button{
     font-weight: bold;
     padding: 20px;
