@@ -6,6 +6,7 @@ function Signup(props){
     const [showPassword, setShowPassword] = useState(false);
     const [showLoginPage, setShowLoginPage] = useState(false);
     const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
 
@@ -25,8 +26,30 @@ function Signup(props){
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(username, password);
-    }
+        try {
+            const res = await fetch("http://localhost:5000/api/auth/signup", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json"
+              },
+              body: JSON.stringify({ username, email, password })
+            });
+      
+            const data = await res.json();
+            console.log("Response from backend:", res.status, data);
+      
+            if (!res.ok) {
+              alert(data.msg || "Signup failed");
+              return;
+            }
+      
+            alert("Signup successful!");
+            setShowLoginPage(true);
+          } catch (err) {
+            console.error(err);
+            alert("An error occurred during signup");
+          }
+    };
 
     return(
     <>
@@ -37,6 +60,7 @@ function Signup(props){
             <h1 className="login-header">Signup</h1>
             <form className="login-form-container">
                 <input value={username} onChange={(e) => setUsername(e.target.value)} className='login-input-box' type='text' placeholder="set username" />
+                <input value={email} onChange={(e) => setEmail(e.target.value)} className='login-input-box' type='email' placeholder="set email" />
                 <input value={password} onChange={(e) => setPassword(e.target.value)} className='login-input-box' type={showPassword ? "text" : "password"} placeholder="set password" />
                 <div className="show-password">
                     <p className="show-password-text">Show password</p>
